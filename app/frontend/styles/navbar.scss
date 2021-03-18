@@ -1,0 +1,50 @@
+nav{
+    background-color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .leftNav{
+        .logo{
+
+            img{
+                width:40px;
+                border-radius:75%;
+                margin:0 20px;
+            }
+        }
+    }
+
+    .rightNav,.leftNav{
+        margin:10px;
+        display: flex;
+        a{
+            text-decoration: none;
+            h4{
+                margin:10px;
+                color:white;
+                &:hover{
+                    color: rgb(182, 175, 175);
+                }
+            }
+        }
+    }
+}
+@media (max-width:600px) {
+    nav{
+        background-color:black;
+        display: flex;
+        overflow: hidden;
+        .rightNav{
+            position: absolute;
+            top:0;
+            right:20px;
+        }
+        .leftNav,.rightNav{
+            display: flex;
+            flex-direction:column;
+        }
+    }
+        
+        
+}
